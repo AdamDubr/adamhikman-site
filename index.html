@@ -68,11 +68,12 @@ a{color:inherit}
 /* шапка */
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(247,244,236,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
-.bar img{height:34px;width:auto}
+.bar img{height:34px;width:auto}.bar>a:first-child{display:inline-flex;align-items:center;min-height:44px}
 nav{display:flex;gap:22px;font-family:var(--f-caps);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
-nav a{text-decoration:none;color:var(--ink-soft)}
+nav a{text-decoration:none;color:var(--ink-soft);padding:10px 0}
 nav a:hover{color:var(--gold)}
-@media (max-width:640px){nav{display:none}.bar img{height:28px}}
+@media (max-width:640px){nav{display:none}.bar img{height:28px}.bar .hcall{display:inline-flex}}
+.hcall{display:none;align-items:center;min-height:40px;padding:0 14px;border:1px solid var(--ink);font-family:var(--f-caps);font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
 
 /* hero */
 .hero{position:relative;padding-block:40px 36px;text-align:center;overflow:hidden}
@@ -107,6 +108,7 @@ h1{font-family:var(--f-caps);font-weight:400;font-size:clamp(34px,8.6vw,76px);li
 h1 em{font-style:normal;color:var(--gold)}
 .lead{max-width:34ch;margin:0 auto;font-size:clamp(17px,4.4vw,20px);color:var(--ink-soft);text-wrap:balance}
 .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+@media (max-width:480px){.cta .btn{flex:1 1 100%;max-width:300px}}
 .btn{font-family:var(--f-caps);font-size:13px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:14px 22px;border:1px solid var(--ink);min-width:180px;text-align:center}
 .btn.solid{background:var(--ink);color:var(--paper)}
 .btn:hover{border-color:var(--gold);color:var(--gold)}
@@ -126,9 +128,9 @@ h2{font-family:var(--f-display);font-weight:500;font-size:clamp(34px,8vw,52px);l
 @media (min-width:860px){.dirs{grid-template-columns:1fr 1fr;column-gap:48px}}
 
 /* портфолио */
-.filters{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.filters{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:20px;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent);padding-right:24px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .filters::-webkit-scrollbar{display:none}
-.chip{flex:none;font-family:var(--f-body);font-size:14px;padding:8px 14px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;cursor:pointer}
+.chip{flex:none;font-family:var(--f-body);font-size:14px;padding:10px 16px;min-height:40px;border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .grid{display:grid;gap:16px;grid-template-columns:1fr}
 @media (min-width:640px){.grid{grid-template-columns:1fr 1fr}}
@@ -183,7 +185,7 @@ h2{font-family:var(--f-display);font-weight:500;font-size:clamp(34px,8vw,52px);l
 @keyframes sheen{to{transform:translateX(60%);opacity:0}}
 .ph .vis.open{font-weight:500}
 .lead-form{display:grid;gap:8px;padding:20px;border-radius:24px;background:rgba(255,255,255,.55);-webkit-backdrop-filter:blur(22px) saturate(1.6);backdrop-filter:blur(22px) saturate(1.6);border:1px solid rgba(255,255,255,.75);box-shadow:0 12px 32px rgba(22,58,47,.08);margin-bottom:8px}
-.lead-t{margin:0 0 6px;font-family:var(--f-display);font-size:22px;font-weight:600}
+.lead-t{text-wrap:balance;margin:0 0 6px;font-family:var(--f-display);font-size:22px;font-weight:600}
 .lead-form label{font-size:13px;color:var(--ink-soft)}
 .lead-form label span{opacity:.7}
 .lead-form input{font:400 17px var(--f-body);color:var(--ink);padding:13px 14px;border-radius:14px;border:1px solid rgba(22,58,47,.18);background:rgba(255,255,255,.8);width:100%;margin-bottom:6px}
@@ -200,12 +202,13 @@ footer .eyebrow{display:block;margin-bottom:6px}
 
 <header>
   <div class="wrap bar">
-    <a href="#top" aria-label="Adam Hikman Engineering — наверх"><img src="logo-h.png" alt="Adam Hikman Engineering" width="900" height="194"></a>
+    <a href="#top" aria-label="Adam Hikman Engineering — наверх"><img src="logo-h-sm.png" alt="Adam Hikman Engineering" width="320" height="69"></a>
     <nav aria-label="Разделы">
       <a href="#about">Обо мне</a>
       <a href="#work">Проекты</a>
       <a href="#contact">Контакты</a>
     </nav>
+    <a class="hcall" href="#contact">Связаться</a>
   </div>
 </header>
 
@@ -230,7 +233,7 @@ footer .eyebrow{display:block;margin-bottom:6px}
 
     <div class="wrap">
       <div class="emblem" role="img" aria-label="Эмблема AH: компас, шестерни, волны и микросхема">
-        <img class="l base" src="em/base.png" alt="" width="720" height="701">
+        <img class="l base" src="em/base.png" alt="" width="720" height="701" fetchpriority="high">
         <img class="l gear" src="em/gear.png" alt="" style="left:12.36%;top:39.23%;width:13.47%">
         <img class="l plane" src="em/plane.png" alt="" style="left:36.39%;top:10.84%;width:25.83%">
         <img class="l star" src="em/star.png" alt="" style="left:30.28%;top:54.21%;width:12.08%">
@@ -343,7 +346,7 @@ footer .eyebrow{display:block;margin-bottom:6px}
             <p class="sub">Турникет для зала единоборств, которым управляет CRM</p>
             <p>Вход по карте или QR из My PIT в окне расписания, списание занятия и журнал каждого прохода. На экране у входа имя бойца, рейтинг PIT, остаток абонемента и ближайшая тренировка; без интернета пускает по последнему списку.</p>
             <ul class="tags"><li>Карта и QR</li><li>Режимы из CRM</li><li>TR / RU / EN</li><li>Офлайн-режим</li></ul>
-            <div class="acts"><a class="btn solid" href="https://demo.pitrating.com" target="_blank" rel="noopener">Подключить зал</a></div>
+            <div class="acts"><a class="btn solid" href="https://demo.pitrating.com/apply" target="_blank" rel="noopener">Подключить зал</a></div>
           </div>
         </article>
       </div>
