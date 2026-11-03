@@ -3,16 +3,22 @@
 <title>PIT GATE — турникет для зала единоборств с CRM | Adam Hikman Engineering</title>
 <meta name="description" content="PIT GATE: турникет для зала единоборств, которым управляет CRM. Вход по карте или QR, расписание, журнал проходов, экран у входа, работа без интернета.">
 <link rel="canonical" href="https://adamhikman.com/pit-gate/">
+<link rel="alternate" hreflang="ru" href="https://adamhikman.com/pit-gate/">
+<link rel="alternate" hreflang="en" href="https://adamhikman.com/en/pit-gate/">
+<link rel="alternate" hreflang="tr" href="https://adamhikman.com/tr/pit-gate/">
+<link rel="alternate" hreflang="x-default" href="https://adamhikman.com/pit-gate/">
 <meta name="robots" content="index,follow">
-<meta name="author" content="Адам Хикман">
+<meta name="author" content="Adam Hikman">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#F7F4EC">
+<meta name="theme-color" content="#0e1014">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Adam Hikman Engineering">
 <meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
 <meta property="og:title" content="PIT GATE — турникет для зала единоборств с CRM | Adam Hikman Engineering">
 <meta property="og:description" content="PIT GATE: турникет для зала единоборств, которым управляет CRM. Вход по карте или QR, расписание, журнал проходов, экран у входа, работа без интернета.">
 <meta property="og:url" content="https://adamhikman.com/pit-gate/">
@@ -53,7 +59,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--yel);outline-offset
   background:radial-gradient(120% 80% at 70% 20%,#2e423c 0%,var(--shadow) 45%,var(--ink) 85%)}
 #emblem{position:absolute;left:50%;top:50%;width:min(150vmin,1100px);height:auto;transform:translate(-50%,-50%);opacity:.22;mix-blend-mode:screen;will-change:transform}
 #emblem .rot{transform-origin:200px 200px}
-#plate{position:absolute;left:0;right:0;top:0;height:170vh;background:url(bg_full.jpg) 50% 0/cover no-repeat;will-change:transform}
+#plate{position:absolute;left:0;right:0;top:0;height:170vh;background:url(/pit-gate/bg_full.jpg) 50% 0/cover no-repeat;will-change:transform}
 #grain{position:fixed;inset:-50%;z-index:30;pointer-events:none;opacity:.09;mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
   animation:grain .5s steps(4) infinite}
@@ -187,7 +193,7 @@ main{position:relative;z-index:10;text-shadow:0 1px 12px rgba(0,0,0,.7)}
   </section>
 
   <section class="scr" id="s2" aria-label="Турникет у входа">
-    <div id="wall" class="rv"><img src="tur_cut3.webp?v=7" alt="Турникет PIT GATE в тёмном зале Mowgli: экран «Kartını okut», за ним граффити зала и плата Raspberry Pi"></div>
+    <div id="wall" class="rv"><img src="/pit-gate/tur_cut3.webp?v=7" alt="Турникет PIT GATE в тёмном зале Mowgli: экран «Kartını okut», за ним граффити зала и плата Raspberry Pi"></div>
     <div class="cap2 rv">
       <div class="credit">Вход по карте или QR · выход свободный</div>
       <h2>Приложил карту или QR — прошёл</h2>
@@ -223,7 +229,7 @@ main{position:relative;z-index:10;text-shadow:0 1px 12px rgba(0,0,0,.7)}
         </div>
         <div class="blk rv">
           <h3>Экран у входа</h3>
-          <img class="shot" src="screen_hello.jpg" alt="Экран турникета: «Добро пожаловать, Adam», ближайшая тренировка Бокс 18:00, вход с 17:30" loading="lazy">
+          <img class="shot" src="/pit-gate/screen_hello.jpg" alt="Экран турникета: «Добро пожаловать, Adam», ближайшая тренировка Бокс 18:00, вход с 17:30" loading="lazy">
           <p>Приветствие по имени, рейтинг PIT, остаток абонемента или «безлимит», ближайшая тренировка, опоздание. Турецкий, русский, английский.</p>
         </div>
         <div class="blk rv">
@@ -233,7 +239,7 @@ main{position:relative;z-index:10;text-shadow:0 1px 12px rgba(0,0,0,.7)}
       </div>
       <div class="where rv">
         <div class="credit">Работает с 26 октября 2026<b>Mowgli Fight Club · Анталья</b></div>
-        <a class="cta" href="https://pitrating.com" target="_blank" rel="noopener">Подключить зал →</a>
+        <a class="cta" href="https://demo.pitrating.com/apply" target="_blank" rel="noopener">Подключить зал →</a>
       </div>
       <div class="sign rv"><svg viewBox="0 0 400 400" aria-hidden="true"><use href="#ah"/></svg>Adam Hikman Engineering · PIT RATING</div>
     </div>
@@ -299,4 +305,4 @@ main{position:relative;z-index:10;text-shadow:0 1px 12px rgba(0,0,0,.7)}
   frame();
 })();
 </script>
-<a href="/" style="position:fixed;z-index:50;left:max(12px,env(safe-area-inset-left,0px));bottom:calc(env(safe-area-inset-bottom,0px) + 12px);display:inline-flex;align-items:center;min-height:40px;font:500 14px system-ui,sans-serif;color:#163A2F;background:rgba(247,244,236,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);padding:0 14px;border-radius:999px;text-decoration:none;box-shadow:0 2px 12px rgba(0,0,0,.25)">← Adam Hikman</a></body></html>
+<div style="position:fixed;z-index:50;left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));bottom:calc(env(safe-area-inset-bottom,0px) + 12px);display:flex;justify-content:space-between;gap:8px;pointer-events:none"><a href="/" style="pointer-events:auto;display:inline-flex;align-items:center;min-height:40px;font:500 14px system-ui,sans-serif;color:#163A2F;background:rgba(247,244,236,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);padding:0 14px;border-radius:999px;text-decoration:none;box-shadow:0 2px 12px rgba(0,0,0,.25)">← Adam Hikman</a><nav aria-label="Language" style="pointer-events:auto;display:flex;gap:2px;padding:2px;background:rgba(247,244,236,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-radius:999px;box-shadow:0 2px 12px rgba(0,0,0,.25)"><a href="/pit-gate/" hreflang="ru" style="display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:36px;border-radius:999px;text-decoration:none;font:600 12px system-ui,sans-serif;color:#F7F4EC;background:#163A2F" aria-current=true>RU</a><a href="/en/pit-gate/" hreflang="en" style="display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:36px;border-radius:999px;text-decoration:none;font:600 12px system-ui,sans-serif;color:#163A2F;background:transparent">EN</a><a href="/tr/pit-gate/" hreflang="tr" style="display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:36px;border-radius:999px;text-decoration:none;font:600 12px system-ui,sans-serif;color:#163A2F;background:transparent">TR</a></nav></div></body></html>

@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://adamhikman.com/</loc><lastmod>2026-11-03</lastmod></url>
-  <url><loc>https://adamhikman.com/vector/</loc><lastmod>2026-11-03</lastmod></url>
-  <url><loc>https://adamhikman.com/pit-gate/</loc><lastmod>2026-11-03</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://adamhikman.com/</loc><lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://adamhikman.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamhikman.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://adamhikman.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamhikman.com/"/>
+  </url>
+  <url><loc>https://adamhikman.com/en/</loc><lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://adamhikman.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamhikman.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://adamhikman.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamhikman.com/"/>
+  </url>
+  <url><loc>https://adamhikman.com/tr/</loc><lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://adamhikman.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamhikman.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://adamhikman.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamhikman.com/"/>
+  </url>
+  <url><loc>https://adamhikman.com/vector/</loc><lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://adamhikman.com/vector/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamhikman.com/en/vector/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://adamhikman.com/tr/vector/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamhikman.com/vector/"/>
+  </url>
+  <url><loc>https://adamhikman.com/en/vector/</loc><lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://adamhikman.com/vector/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamhikman.com/en/vector/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://adamhikman.com/tr/vector/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamhikman.com/vector/"/>
+  </url>
+  <url><loc>https://adamhikman.com/tr/vector/</loc><lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://adamhikman.com/vector/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamhikman.com/en/vector/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://adamhikman.com/tr/vector/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamhikman.com/vector/"/>
+  </url>
+  <url><loc>https://adamhikman.com/pit-gate/</loc><lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://adamhikman.com/pit-gate/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamhikman.com/en/pit-gate/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://adamhikman.com/tr/pit-gate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamhikman.com/pit-gate/"/>
+  </url>
+  <url><loc>https://adamhikman.com/en/pit-gate/</loc><lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://adamhikman.com/pit-gate/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamhikman.com/en/pit-gate/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://adamhikman.com/tr/pit-gate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamhikman.com/pit-gate/"/>
+  </url>
+  <url><loc>https://adamhikman.com/tr/pit-gate/</loc><lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://adamhikman.com/pit-gate/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adamhikman.com/en/pit-gate/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://adamhikman.com/tr/pit-gate/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adamhikman.com/pit-gate/"/>
+  </url>
 </urlset>
